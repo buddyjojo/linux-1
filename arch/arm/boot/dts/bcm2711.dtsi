@@ -618,8 +618,8 @@
 
 		v3d: gpu@7ec00000 {
 			compatible = "brcm,2711-v3d";
-			reg = <0x0 0x7ec00000 0x0 0x4000>,
-			      <0x0 0x7ec04000 0x0 0x4000>;
+			reg = <0x0 0x7ec00000 0x4000>,
+			      <0x0 0x7ec04000 0x4000>;
 			reg-names = "hub", "core0";
 
 			power-domains = <&pm BCM2835_POWER_DOMAIN_GRAFX_V3D>;
