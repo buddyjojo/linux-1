@@ -37,19 +37,6 @@
 	};
 
 	fragment@2 {
-		target = <&v3dbus>;
-		#address-cells = <2>;
-		#size-cells = <1>;
-
-		__overlay__ {
-			#address-cells = <1>;
-			#size-cells = <2>;
-			ranges = <0x7c500000  0x4 0x7c500000  0x0 0x03300000>,
-				 <0x40000000  0x4 0xc0000000  0x0 0x00800000>;
-		};
-	};
-
-	fragment@3 {
 		target = <&emmc2bus>;
 		#address-cells = <2>;
 		#size-cells = <1>;
